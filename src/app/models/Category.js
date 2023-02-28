@@ -1,11 +1,10 @@
-  import Sequelize, { Model } from "sequelize";
-  
-class Product extends Model {
+import Sequelize, { Model } from "sequelize";
+
+class Category extends Model {
   static init(sequelize) {
     super.init(
       {
         name: Sequelize.STRING,
-        quantity: Sequelize.INTEGER,
       },
       {
         sequelize,
@@ -15,4 +14,4 @@ class Product extends Model {
   }
 }
 
-export default Product;
+export default Category;
