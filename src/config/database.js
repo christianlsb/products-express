@@ -2,7 +2,7 @@ module.exports = {
   dialect: 'postgres',
   host: 'localhost',
   username: 'postgres',
-  password: 'postgres',
+  password: 'senai',
   database: 'stock-fullstack',
   define: {
     timespamps: true,
