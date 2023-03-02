@@ -1,5 +1,6 @@
 import * as yup from "yup";
 import { v4 } from "uuid";
+
 import Product from "../../app/models/Product";
 
 class ProductController {
@@ -20,7 +21,7 @@ class ProductController {
     const product = await Product.create({
       id: v4(),
       name,
-      quantity,
+      quantity
     });
     return response.json(product);
   }
